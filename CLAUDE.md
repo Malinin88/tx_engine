@@ -3,8 +3,15 @@
 This is a Rust demo project which represents a CLI tool that emulates a simple transaction server.
 
 # Development rules
+- For code simplicity avoid Rust lifetimes usage where possible. We are fine with the associated memory overhead given it makes the code easier to maintain.
+- Put all deeply::nested::imports under the `use` statements, do not have the inline in the code.
 - Once you are done with the code changes run the following tools to make sure the code is up to the coding standards:
   - `cargo fmt`
   - `cargo clippy`
 - If any clippy issues appear, fix them.
 - Do not commit any code unless explicitly asked by the user.
+
+
+# Testing rules
+
+- When writing tests do your best to avoid multiple assertions in one test. Break down the tests to atomic ones checking one thing per test.
