@@ -1,8 +1,6 @@
-//! Transaction data model — pure types, no parsing logic.
-
 use rust_decimal::Decimal;
 
-/// The type of a transaction.
+/// The type of transaction.
 #[derive(Debug, Clone, PartialEq)]
 pub enum TransactionKind {
     Deposit,

@@ -1,5 +1,3 @@
-//! CSV input reader and output writer.
-
 use std::io;
 
 use csv::{ReaderBuilder, StringRecord, StringRecordsIntoIter, Trim, WriterBuilder};
