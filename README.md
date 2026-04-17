@@ -1,6 +1,6 @@
 # tx_engine
 
-A streaming, single-threaded transaction processing engine. Reads a CSV of
+A demo of a transaction processing engine. Reads a CSV of
 transactions from a file path, processes deposits, withdrawals, disputes,
 resolutions, and chargebacks against per-client accounts, and writes the
 final account state as CSV to stdout.
