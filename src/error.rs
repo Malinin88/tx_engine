@@ -1,9 +1,3 @@
-//! Error types for the transaction engine.
-//!
-//! - [`EngineError`]: fatal I/O failures and malformed-input warnings surfaced
-//!   through the engine (negative amount, duplicate tx id).
-//! - [`ParseError`]: failures produced while reading and parsing the input CSV
-
 use std::error::Error;
 use std::fmt;
 use std::io;
