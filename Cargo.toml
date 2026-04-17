@@ -7,3 +7,7 @@ edition = "2024"
 csv = "1.4.0"
 rust_decimal = { version = "1", features = ["serde"] }
 serde = { version = "1.0.228", features = ["derive"] }
+
+[dev-dependencies]
+assert_cmd = "2"
+predicates = "3"
